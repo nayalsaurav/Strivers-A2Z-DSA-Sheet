@@ -1,9 +1,13 @@
 int sumOfAllDivisors(int n) {
-    int ans =0;
-	for(int i=1;i<=n;i++){
-		ans +=i*(n/i);
-	}
-	return ans;
+    int ans = 0; // Initialize the answer to 0
+
+    // Loop from 1 to n
+    for (int i = 1; i <= n; i++) {
+        // For each i, add i times the number of times i divides n
+        ans += i * (n / i);
+    }
+
+    return ans; // Return the final answer
 }
 
 Approach : Harmonic lemma
